@@ -14,7 +14,7 @@ const Header = ({
   isAccentBox,
   type
 }) => {
-  const data = badgeData[type];
+  const data = badgeData[type] || {};
   const {
     currentStreakDays,
     longestStreak,

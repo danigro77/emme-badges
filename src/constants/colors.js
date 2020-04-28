@@ -26,6 +26,10 @@ const colors = {
     unfilled: LIGHT_GREY,
     filled: ORANGE,
     border: WHITE,
+  },
+  pagination: {
+    active: WHITE,
+    passive: LIGHT_GREY,
   }
 };
 

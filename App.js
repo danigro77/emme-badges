@@ -5,6 +5,7 @@ import { NativeRouter, Route, Link } from 'react-router-native';
 import Icons from 'assets/icons';
 import COLORS from 'src/constants/colors';
 import ROUTES from 'src/constants/routes'
+import STYLES from 'src/constants/styles';
 
 import {
   Home,
@@ -58,29 +59,39 @@ const Navigation = () => {
 export default function App() {
   return (
     <NativeRouter>
-        <ScrollView contentContainerStyle={styles.container}>
-          <View style={styles.top} />
-          <View style={styles.body}>
-            <Route exact path={ROUTES.HOME} component={Home} />
-            <Route path={ROUTES.PACK} component={Packs} />
-            <Route path={ROUTES.RX} component={Rx} />
-            <Route path={ROUTES.SETTINGS} component={Settings} />
-            <Route path={ROUTES.BADGES} component={Badges} />
-          </View>
-        </ScrollView>
-      <Navigation />
+        <View style={styles.app}>
+          <ScrollView contentContainerStyle={styles.scrolling}>
+            <View style={styles.container}>
+              <View style={styles.top} />
+              <View style={styles.body}>
+                <Route exact path={ROUTES.HOME} component={Home} />
+                <Route path={ROUTES.PACK} component={Packs} />
+                <Route path={ROUTES.RX} component={Rx} />
+                <Route path={ROUTES.SETTINGS} component={Settings} />
+                <Route path={ROUTES.BADGES} component={Badges} />
+              </View>
+            </View>
+          </ScrollView>
+          <Navigation />
+        </View>
   </NativeRouter>
 );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  app: {
+    flex: 1
+  },
+  scrolling: {
     flex: 1,
+    flexGrow: 1,
     backgroundColor: COLORS.background.primary,
     alignItems: 'center',
     color: COLORS.text.primary,
+  },
+  container: {
+    flex:1,
     alignSelf: 'stretch',
-    overflow: 'visible'
   },
   top: {
     backgroundColor: COLORS.background.highlightPrimary,
@@ -101,16 +112,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignSelf: 'stretch',
     width: '100%',
-    height: 50,
+    height: 40,
     justifyContent: 'space-around',
     alignItems: 'center',
     position: 'absolute',
     bottom: 0,
-    elevation: 10,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 1,
+    backgroundColor: COLORS.background.primary,
+    ...STYLES.shadow
   },
   navIcon: {
     width: 20,

@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Badge from 'src/components/atoms/Badge';
-import Box from 'src/components/atoms/Box';
 import ProgressBar from 'src/components/atoms/ProgressBar';
 
 import STYLES from 'src/constants/styles';
