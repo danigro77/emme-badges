@@ -44,8 +44,7 @@ const styles = StyleSheet.create({
     zIndex: 1
   },
   headerText: {
-    marginVertical: 10,
-    marginHorizontal: 20,
+    ...STYLES.boxPadding
   },
   descriptionBox: {
     borderColor: COLORS.border.primary,
@@ -54,7 +53,8 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   description: {
-    ...STYLES.fontStyles.text
+    ...STYLES.fontStyles.text,
+    textAlign: 'center',
   },
   numbers: {
     flexDirection: 'row',

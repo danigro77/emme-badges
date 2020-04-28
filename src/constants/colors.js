@@ -22,6 +22,11 @@ const colors = {
     secondary: WHITE,
   },
   shadow: GREY,
+  progress: {
+    unfilled: LIGHT_GREY,
+    filled: ORANGE,
+    border: WHITE,
+  }
 };
 
 export default colors;

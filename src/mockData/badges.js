@@ -42,12 +42,12 @@ export default {
     ],
     inProgress: [
       {
-        type: perfectPack3,
+        badge: perfectPack3,
         current: 7,
         total: 20
       },
       {
-        type: perfectWeek4,
+        badge: perfectWeek4,
         current: 4,
         total: 7
       },
@@ -55,7 +55,8 @@ export default {
     previous: [
       perfectPack1,
       perfectWeek1,
-      perfectWeek2
+      perfectWeek2,
+      timeJump,
     ]
   },
   awareness: {
@@ -68,7 +69,7 @@ export default {
     ],
     inProgress: [
       {
-        type: trackingVitals2,
+        badge: trackingVitals2,
         current: 8,
         total: 9
       },

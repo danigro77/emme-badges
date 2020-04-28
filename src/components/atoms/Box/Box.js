@@ -13,6 +13,7 @@ const Box = ({
     ...isAccentBox && {
       borderTopEndRadius: 30,
       borderBottomStartRadius: 30,
+      alignItems: 'center',
     }
   };
   return <View style={styling}>
@@ -26,8 +27,8 @@ const styles = StyleSheet.create({
     ...STYLES.shadow,
     width: '90%',
     alignSelf: 'center',
-    alignItems: 'center',
     borderRadius: 10,
+    marginVertical: 5,
   }
 });
 

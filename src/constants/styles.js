@@ -23,6 +23,11 @@ const circle = {
   alignItems: 'center',
 };
 
+const boxPadding = {
+  marginVertical: 10,
+  marginHorizontal: 20,
+};
+
 export const FONT_FAMILY = 'Helvetica Neue';
 
 const fontStyles = {
@@ -33,9 +38,13 @@ const fontStyles = {
     fontFamily: FONT_FAMILY
   },
   text: {
-    textAlign: 'center',
     fontSize: 12,
     color: COLORS.text.primary,
+    fontFamily: FONT_FAMILY
+  },
+  subtext: {
+    fontSize: 10,
+    color: COLORS.text.secondary,
     fontFamily: FONT_FAMILY
   }
 };
@@ -44,4 +53,5 @@ module.exports = {
   fontStyles,
   circle,
   shadow,
+  boxPadding,
 };
