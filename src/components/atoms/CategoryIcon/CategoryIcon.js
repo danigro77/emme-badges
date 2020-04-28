@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Image } from 'react-native';
 
 import Categories from 'assets/categories';
-import COLORS from 'src/constants/colors';
 
 import {
   circle
@@ -21,7 +20,8 @@ const CategoryIcon = ({
 
 const styles = {
   badge: {
-    ...circle
+    ...circle,
+    marginTop: -50
   }
 };
 

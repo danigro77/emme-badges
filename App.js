@@ -80,11 +80,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     color: COLORS.text.primary,
     alignSelf: 'stretch',
+    overflow: 'visible'
   },
   top: {
     backgroundColor: COLORS.background.highlightPrimary,
     height: 150,
     alignSelf: 'stretch',
+    zIndex: 0
   },
   body: {
     alignSelf: 'center',
@@ -92,6 +94,7 @@ const styles = StyleSheet.create({
     minHeight: '100%',
     width: '100%',
     backgroundColor: COLORS.background.primary,
+    zIndex: 0
   },
   navigation: {
     flex: 1,

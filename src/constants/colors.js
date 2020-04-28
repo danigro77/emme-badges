@@ -21,6 +21,7 @@ const colors = {
     primary: LIGHT_GREY,
     secondary: WHITE,
   },
+  shadow: GREY,
 };
 
 export default colors;
