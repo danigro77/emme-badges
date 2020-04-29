@@ -32,3 +32,10 @@ I also did not find the iPhone X in the simulator, so I used the default iPhone 
 I was debating to move the mock data into a Redux state, but then I decided, that what I wanted to show in this exercise is how fast I can adapt in a new environment and I think I have shown that.
 
 I worked in total two days on this, I had fun and I am quite pleased with the result.
+
+## Screenshots
+I added three screenshots into the `assets` folder.
+You will notice the things I mentioned above:
+* The pagination dots are not visible. Please let me know, why.
+* There is no screenshot of a full view on the Oldest because when moving the view down it would not stick and jump back up which made a screenshot impossible.
+* I designed it for the iPhone SE and not X because I could not find it in the Simulator.

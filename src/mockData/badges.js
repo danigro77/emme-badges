@@ -62,16 +62,13 @@ export default {
   awareness: {
     currentStreakDays: 5,
     longestStreak: 14,
-    totalBadges: 2,
+    totalBadges: 1,
     description:' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    recent: [
-      trackingVitals1,
-    ],
     inProgress: [
       {
         badge: trackingVitals2,
         current: 8,
-        total: 9
+        total: 29
       },
     ],
     previous: [
