@@ -24,9 +24,11 @@ I introduced [react-native-progress](https://github.com/oblador/react-native-pro
 When the page was build and I wanted to move the header up, I noticed that I had zIndex issues. The aubergine background was on top of my header component.
 After playing around for a while I thought that the swiper night cause the issue, so I removed it and replaced it with [react-native-dots-pagination](https://www.npmjs.com/package/react-native-dots-pagination) and used [react-native-swipe-gestures](https://www.npmjs.com/package/react-native-swipe-gestures) to rebuild the swiper on my own. 
 This made the zIndex issue disappear, but when moving the header up, the dots were gone again and all my attempts to make them visible made it just angrier at me until they were not found at all.
+I even tried to create my own PaginationDots component, but I still could not see it in the UI. **This is bugging me and I would really appreciate if someone could tell me, what I did wrong there.**
 
 I am also not sure if the scrolling actually works. It seems to move now in the simulator but it does not stay where it was moved to and jumps back to the top.
 I also did not find the iPhone X in the simulator, so I used the default iPhone SE simulation for my development.
 
 I was debating to move the mock data into a Redux state, but then I decided, that what I wanted to show in this exercise is how fast I can adapt in a new environment and I think I have shown that.
+
 I worked in total two days on this, I had fun and I am quite pleased with the result.

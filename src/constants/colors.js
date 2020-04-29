@@ -22,15 +22,12 @@ const colors = {
     secondary: WHITE,
   },
   shadow: GREY,
+  paginationDot: WHITE,
   progress: {
     unfilled: LIGHT_GREY,
     filled: ORANGE,
     border: WHITE,
   },
-  pagination: {
-    active: WHITE,
-    passive: LIGHT_GREY,
-  }
 };
 
 export default colors;

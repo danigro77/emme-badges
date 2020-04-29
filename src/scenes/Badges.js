@@ -1,52 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import GestureRecognizer from 'react-native-swipe-gestures';
-
+import React, { useState } from 'react';
+import { StyleSheet, View } from 'react-native';
 
 import badgeData from 'src/mockData/badges';
-import PaginationDots from 'src/components/atoms/PaginationDots';
-import Category from 'src/components/organism/Badges/Category/Category';
+
+import Category from 'src/components/organism/Badges/Category';
+import PaginationSwiper from 'src/components/atoms/PaginationSwiper';
 
 const Badges = () => {
   const allCategories = Object.keys(badgeData);
   const numOfCategories = allCategories.length;
-  const [page, setPage] = useState({index: 0, category: allCategories[0]});
-
-  const onSwipeLeft = () => {
-    const newPageIndex = page.index+1;
-    const index = newPageIndex >= numOfCategories ? 0 : newPageIndex;
-    setPage({
-      index,
-      category: allCategories[index],
-    });
-  };
-
-  const onSwipeRight = () => {
-    const newPageIndex = page.index-1;
-    const index = newPageIndex < 0 ? numOfCategories-1 : newPageIndex;
-    setPage({
-      index,
-      category: allCategories[index],
-    });
-  };
+  const [category, setCategory] = useState(allCategories[0]);
 
   return <View style={styles.page}>
-    <GestureRecognizer
-      onSwipeLeft={onSwipeLeft}
-      onSwipeRight={onSwipeRight}
+    <PaginationSwiper
+      numOfPages={numOfCategories}
+      onSwipe={(index) => setCategory(allCategories[index])}
     >
-      <PaginationDots
-        length={numOfCategories}
-        active={page.index}
-      />
-      <Category category={page.category} />
-    </GestureRecognizer>
+      <Category category={category} />
+    </PaginationSwiper>
   </View>
 };
 
 const styles = StyleSheet.create({
   page: {
-    marginTop: -50,
+    marginTop: -10,
     zIndex: 2,
   },
 });

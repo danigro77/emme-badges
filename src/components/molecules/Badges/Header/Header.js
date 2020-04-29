@@ -3,15 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import CategoryIcon from 'src/components/atoms/CategoryIcon';
 import Box from 'src/components/atoms/Box';
+import NumberBlock from 'src/components/atoms/NumberBlock';
+
 import COLORS from 'src/constants/colors';
 import STYLES from 'src/constants/styles';
 
 import badgeData from 'src/mockData/badges';
-import NumberBlock from 'src/components/atoms/NumberBlock';
 
 const Header = ({
-  children,
-  isAccentBox,
   type
 }) => {
   const data = badgeData[type] || {};

@@ -49,9 +49,18 @@ const fontStyles = {
   }
 };
 
+const dotStyle = {
+  width: 10,
+  height: 10,
+  borderWidth: 2,
+  borderColor: COLORS.paginationDot,
+  borderRadius: 5,
+};
+
 module.exports = {
   fontStyles,
   circle,
   shadow,
   boxPadding,
+  dotStyle,
 };

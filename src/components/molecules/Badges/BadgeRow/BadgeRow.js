@@ -1,10 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Box from 'src/components/atoms/Box';
-
 import STYLES from 'src/constants/styles';
 
+import Box from 'src/components/atoms/Box';
 import BadgeRowItem from "./BadgeRowItem";
 
 const BadgeRow = ({
